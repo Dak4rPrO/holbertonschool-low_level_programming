@@ -14,8 +14,17 @@ int main(void)
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
 		{
-			lastDigit = n % 10;
-			if ( 
-
-		return (0);
+			lastDigit = n % 10; 
+			if (n == 0) /* Si el numero es igual */
+                {
+			printf("is zero \n");
+		}
+			else if (n > 0) /* Si el numero es positivo */
+		{
+			printf("is positive") 
+		}
+			else /* Si el numero es negativo */											
+		{																			  printf("is negative \n");
+		}
+			return (0);
 }
