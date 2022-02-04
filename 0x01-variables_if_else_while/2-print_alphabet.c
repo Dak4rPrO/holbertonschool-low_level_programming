@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - imprime el alfabeto en minusculas
- * Return: si el cofigo funciona retorna 0
+ * Return: si el codigo funciona retorna 0
 */
 
 int main(void)

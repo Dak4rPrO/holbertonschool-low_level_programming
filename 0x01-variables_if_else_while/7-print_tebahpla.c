@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - imprime todos los numeros de un solo dijito
+ * main - imprime todos los alfabeto al reves
  * Return: si el cofigo funciona retorna 0
 */
 
@@ -8,7 +8,7 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 'z'; ch <= 'a'; ch--)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
 		putchar(ch);
 	}
