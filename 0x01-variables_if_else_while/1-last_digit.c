@@ -1,31 +1,21 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
-/**
- * main - Mostrar un numero aleatorio, indicar si es positivo o negativo
- * Return: Si el codigo funciona retornara el valor de la variable n
+/** 
+ * main - a
+ * Return: Si el preograma funciona retornara 0  
 */
 
 int main(void)
 {
-	int n;
+		int n, lastDigit;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2; /* n vale un numero aleatorio */
-	{
-		if (n == 0) /* Si el numero es igual */
+		srand(time(0));
+		n = rand() - RAND_MAX / 2;
 		{
-			printf("is zero \n");
-		}
-		else if (n > 0) /* Si el numero es positivo */
-		{
-			printf("is positive \n");
-		}
-		else /* Si el numero es negativo */
-		{
-			printf("is negative \n");
-		}
+			lastDigit = n % 10;
+			if ( 
+
 		return (0);
-	}
 }
