@@ -6,6 +6,6 @@
 
 int main(void)
 {
-	printf("\n 1 2 3 4 5 6 7 8 9");
+	printf("\n 0123456789");
 	return (0);
 }
