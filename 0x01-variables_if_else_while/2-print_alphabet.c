@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - imprime el alfabeto en minusculas
  * Return: si el cofigo funciona retorna 0
 */
