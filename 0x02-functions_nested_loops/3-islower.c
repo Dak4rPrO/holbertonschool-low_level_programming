@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - verifica si 
- *
- * Return: Always 0.
+ * _islower- verifica si el caracter esta en minuscula
+ * @c : c es el numero aleatorio
+ * Return: retorna 1 o 0 dependiendo del resultado
 */
 
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{ 
+	{
 		return (1);
 	}
-	else  
+	else
 	{
 		return (0);
 	}
