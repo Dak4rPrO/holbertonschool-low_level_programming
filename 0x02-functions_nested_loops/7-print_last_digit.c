@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * _print_last_digit - imprime un el ultimo digito
+ * print_last_digit - imprime un el ultimo digito
  * @n: n es el numero aleatorio a generar
  * Return: retorna el valor de n
 */
 
-int _print_last_digit(int n)
+int print_last_digit(int n)
 {
-	if(n < 0)
-		n*= -1;
-	_putchar('o' + (n%10));
+	if (n < 0)
+		n *= -1;
+
+	_putchar('o' + (n % 10));
+
 	return (n % 10);
 }
