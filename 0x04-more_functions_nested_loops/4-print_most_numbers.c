@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_most_numbers - check the coe
 */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int n;
 
-	for (n = 0 ; n >= 9 ; n++)
+	for (n = 0; n <= 9; n++)
 	{
-		_putchar (n + 0);
+		if (n == 2 || n == 4)
+			n++;
 	}
-	_putchar ('\n');
+		_putchar (n + '0');
+		_putchar ('\n');
 }
