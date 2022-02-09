@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _isupper - funcion para 
+ * _isupper - funcion para
  * @c : d
  * Return: Always 0.
 */
 int _isupper(int c)
 {
-	if ( c >= 65 && c <= 90 )
+	if (c >= 65 && c <= 0)
 	{
 		return (1);
 	}
