@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
+ * int_isupper - funcion para 
+ * @c : d
  * Return: Always 0.
 */
 int_isupper(int c)
 {
 	if ( c >= 65 && c <= 90 )
 	{
-		returns (1);
+		return (1);
 	}
-		returns (0);
+		return (0);
 }
