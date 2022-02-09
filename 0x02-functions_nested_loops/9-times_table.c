@@ -1,37 +1,34 @@
 #include "main.h"
 
-/*
- * times_tables - si
+/**
+ * times_tables - imprime la table del 9
  */
 
 void times_tables(void)
 {
 	int line;
 	int column;
-	int num;
+	int n;
 
 	for (line = 0; line <= 9; line++)
 	{
-	for (column = 0; column <= 9; column++)
+		_putchar(48);
+
+	for (column = 1; column <= 9; column++)
 	{
-		num = (line * column);
-		if (column == 0)
+		n = (line * column);
+		_putchar(44);
+		_putchar(32);
+
+		if (n <= 9)
 		{
-			_putchar('0' + num);
+			_putchar(32);
+			_putchar(n + 48);
 		}
-		else if (column <= 9)
+		else
 		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(num + '0');
-		}
-		else if (num > 9)
-		{
-			_putchar(',');
-			_putchar(' ');
-			_putchar('0' + (num / 10));
-			_putchar('0' + (num % 10));
+			_putchar((n / 10) + 48);
+			_putchar((n % 10) + 48);
 		}
 	}
 		_putchar('\n');
