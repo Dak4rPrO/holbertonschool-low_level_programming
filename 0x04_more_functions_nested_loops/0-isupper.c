@@ -11,8 +11,5 @@ int_isupper(int c)
 	{
 		returns (1);
 	}
-	else
-	{
 		returns (0);
-	}
 }
