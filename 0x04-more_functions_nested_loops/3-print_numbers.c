@@ -7,6 +7,10 @@
 
 void print_numbers(void)
 {
-	
-	_putchar('%d\n', n)
+	int n;
+
+	for (n <= 0 ; n >= 9 ; n++)
+	{
+	_putchar('%d\n', n);
+	}
 }
