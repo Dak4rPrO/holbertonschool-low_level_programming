@@ -1,25 +1,27 @@
 #include "main.h"
 
 /**
- * _print_rev- codigo
+ * print_rev - codigo
  * @s : puntero
+ * _putchar - m
 */
 
-void _print_rev(char *s)
+void print_rev(char *s)
 {
-        int a;
-        int b;
+	int a = 0;
+	int b;
 
-        while (*s != '\0')
-        {
-                a++;
-                ++s;
-        }
-        for (i = a; b > 0; b--)
-        {
-                _putchar(*s);
-                s--;
-        }
+	while (*s != '\0')
+	{
+		a++;
+		++s;
+	}
+	s--;
+	for (b = a; b > 0; b--)
+	{
+		_putchar(*s);
+		s--;
+	}
 
-        _putchar('\n');
+	_putchar('\n');
 }
