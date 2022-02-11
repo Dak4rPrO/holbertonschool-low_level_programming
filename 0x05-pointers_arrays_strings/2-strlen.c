@@ -3,17 +3,18 @@
 /**
  * _strlen - s
  * @s : a
+ * Return: retorna long
 */
 
 int _strlen(char *s)
 {
-	int long = 0;
+	int lon = 0;
 
 	while (*s != '\0')
 	{
-		long++;
+		lon++;
 		s++;
 	}
-	return (long);int _strlen(char *s);
+	return (lon);
 
 }
