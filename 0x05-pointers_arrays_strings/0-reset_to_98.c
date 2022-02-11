@@ -2,7 +2,7 @@
 
 /*
  * reset_to_98 - prototipo
- * @*n : si
+ * @n : si
  */
 
 void reset_to_98(int *n)
