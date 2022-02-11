@@ -8,15 +8,15 @@
 
 int _strlen(char *s)
 {
-	int long = 0;
+	int lon = 0;
 
 	while (*s != '\0')
 	{
-		long++;
+		lon++;
 		s++;
 	}
 
-	return (long);
+	return (lon);
 }
 
 /**
@@ -24,7 +24,7 @@ int _strlen(char *s)
  * @s: punteros
 */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int a = 0;
 	int b = (_strlen(s) - 1);
