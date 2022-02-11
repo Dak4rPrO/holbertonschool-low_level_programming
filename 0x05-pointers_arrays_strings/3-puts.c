@@ -1,15 +1,25 @@
 #include "main.h"
 
 /**
- * _puts- s
- * @str : a
+ * _print_rev- codigo
+ * @s : puntero
 */
 
-void _puts(char *str)
+void _print_rev(char *s)
 {
-	while (*str != '\0')
+	int a;
+	int b;
+
+	while (*s != '\0')
 	{
-		_putchar(*str++);
+		a++;
+		++s;
 	}
+	for (i = a; b > 0; b--)
+	{
+		_putchar(*s);
+		s--;
+	}
+
 	_putchar('\n');
 }
