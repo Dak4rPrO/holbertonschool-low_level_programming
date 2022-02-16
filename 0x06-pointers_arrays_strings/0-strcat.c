@@ -4,6 +4,7 @@
  * _strcat - codigo para conectar 2 cadenas
  * @dest: cadena "Hello "
  * @src: cadena "World\n"
+ * Return: retorna dest
  */
 
 char *_strcat(char *dest, char *src)
