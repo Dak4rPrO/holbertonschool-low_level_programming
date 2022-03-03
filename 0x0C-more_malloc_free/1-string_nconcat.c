@@ -3,37 +3,41 @@
 
 /**
 * string_nconcat - function that concatenates two strings.
-* @s1:
-* @s2:
-* @n: 
+* @s1: pointer 1
+* @s2: pointer 2
+* @n: variable
 * Return: return
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *concat;
+	char *concat;
 
-        int index, concat = 0, len = 0;
+	unsigned int i = 0, j = n;
 
-        if (s1 == NULL)
-                s1 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-        if (s2 == NULL)
-                s2 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-        for (index = 0; s1[index] || s2[index]; index++)
-                len++;
+	while (s1[j])
+		j++;
 
-        concat = malloc(sizeof(char) * len);
+	concat = malloc(sizeof(char) * (j + 1));
 
-        if (concat == NULL)
-                return (NULL);
+	if (concat == NULL)
+		return (NULL);
 
-        for (index = 0; s1[index]; index++)
-                concat[concat_index++] = s1[index];
+	j = 0;
 
-        for (index = 0; s2[index]; index++)
-                concat[concat_index++] = s2[index];
+	for (i = 0; s1[i]; i++)
+		concat[j++] = s1[i];
 
-        return (concat);
+	for (i = 0; s2[i] && i < n; i++)
+		concat[j++] = s2[i];
+
+	concat[j] = '\0';
+
+	return (concat);
 }
