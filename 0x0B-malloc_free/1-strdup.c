@@ -3,7 +3,7 @@
 
 /**
  * _strdup - function that returns a pointer to a newly allocated space in memo
- * @str:
+ * @str: pointer
  * Return: return s
  */
 
