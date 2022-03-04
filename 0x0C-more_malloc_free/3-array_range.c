@@ -5,6 +5,7 @@
  * array_range - function that creates an array of integers.
  * @min: number min
  * @max: number max
+ * Return: return pointer ptr
  */
 
 int *array_range(int min, int max)
@@ -18,7 +19,7 @@ int *array_range(int min, int max)
 
 	ptr = malloc(sizeof(int) * n);
 
-		if (ptr == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
 	for (i = min; i <= max; i++)
