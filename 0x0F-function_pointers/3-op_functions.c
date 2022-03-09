@@ -4,6 +4,7 @@
  * op_add - sum of a and b
  * @a: num1
  * @b: num2
+ * Return: always
  */
 
 int op_add(int a, int b)
@@ -15,6 +16,7 @@ int op_add(int a, int b)
  * op_sub - difference of a and b
  * @a: num1
  * @b: num2
+ * Return: always
  */
 
 int op_sub(int a, int b)
@@ -26,6 +28,7 @@ int op_sub(int a, int b)
  * op_mul - product of a and b
  * @a: num1
  * @b: num2
+ * Return: always
  */
 
 int op_mul(int a, int b)
@@ -37,11 +40,12 @@ int op_mul(int a, int b)
  * op_div -  result of the division of a by b
  * @a: num1
  * @b: num2
+ * Return: always
  */
 
 int op_div(int a, int b)
 {
-	if(b == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 			exit(100);
@@ -53,11 +57,12 @@ int op_div(int a, int b)
  * op_mod - remainder of the division of a by b
  * @a: num1
  * @b: num2
+ * Return: always
  */
 
 int op_mod(int a, int b)
 {
-	if(b == 0)
+	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
