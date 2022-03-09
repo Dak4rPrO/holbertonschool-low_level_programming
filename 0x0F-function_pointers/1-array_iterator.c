@@ -9,15 +9,16 @@
  * Return: always
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int));
 {
-	if (array == NULL || action == NULL)
-		return;
+	if (array == NULL || cmp == NULL)
+		return (-1);
+
+	if (size <= 0)
+		return (-1);
 
 	while (size > 0)
 	{
-		action(*array);
-		array++;
-		size--;
+		size(*array);
 	}
 }
