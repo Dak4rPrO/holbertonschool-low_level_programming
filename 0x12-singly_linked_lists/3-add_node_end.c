@@ -1,26 +1,39 @@
-#include "lists.h" case, use ":recover" or "vim -r 2-add_node.c"
-    to recover the changes (see ":help recovery").
-/** If you did this already, delete the swap file ".2-add_node.c.s
- * add_node - function that adds a new node at the beginning of a list_t list. this message.
+#include "lists.h"
+
+/**
+ * add_node_end - function that adds a new node at the end of a list_t list.
  * @head: pointer to a pointer
- * @str: stringdd_node.c.swp" already exists!
+ * @str: stringi
+ * Return: return new node
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-        list_t *newNode;
+	list_t *newNode, *temp;
 
-        newNode = malloc(sizeof(list_t));
+	if (str == NULL)
+		return (NULL);
 
+	newNode = malloc(sizeof(list_t));
 
-        newNode->str = strdup(str);
-        newNode->len = strlen(str);
-        newNode->next = *head;
+	if (newNode == NULL)
+		return (NULL);
 
-        if (newNode == NULL || str == NULL)
-                return (NULL);
+	newNode->str = strdup(str);
+	newNode->len = strlen(str);
+	newNode->next = NULL;
 
-        *head = newNode;
+	if (*head == NULL)
+		*head = newNode;
+	else
+	{
+		temp = *head;
 
-        return (newNode);
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+		temp->next = newNode;
+	}
+	return (newNode);
 }
