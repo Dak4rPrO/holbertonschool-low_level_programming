@@ -3,7 +3,7 @@
 /**
  * print_listint - function that prints all the elements of a list
  * @h: node
- * @n: el numero que nos dan (el string basicamente)
+ * n: el numero que nos dan (el string basicamente)
  * Return: return counter
  */
 
