@@ -18,6 +18,7 @@ int pop_listint(listint_t **head)
 	tempDelete = *head;
 	data = tempDelete->n;
 	*head = tempDelete->next;
+
 	free(tempDelete);
 
 	return (data);
