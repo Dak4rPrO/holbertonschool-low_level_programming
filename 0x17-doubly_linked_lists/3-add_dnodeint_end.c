@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - function that adds a new node at the end of a list.
+ * add_dnodeint_end - function that adds a new node at the end of a list.
  * @head: pointer to a pointer
  * @n: node:
  * Return: return new node
@@ -21,6 +21,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (*head == NULL)
 	{
+		newNode->prev = NULL;
 		*head = newNode;
 		return (newNode);
 	}
