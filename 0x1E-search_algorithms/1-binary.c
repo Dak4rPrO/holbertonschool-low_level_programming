@@ -18,23 +18,23 @@ int binary_search(int *array, size_t size, int value)
 	x = value;
 
 	while (low <= high)
-  {
-    mid = low + (high - low) / 2;
-		
-    printf("Searching in array: ");
-		
-    for (i = low; i < high; i++)
-		  printf("%d, ", array[i]);
-		
-    printf("%d\n", array[high]);
-		
-    if (array[mid] == x)
+	{
+    	mid = low + (high - low) / 2;
+
+    	printf("Searching in array: ");
+
+    	for (i = low; i < high; i++)
+			  printf("%d, ", array[i]);
+
+    	printf("%d\n", array[high]);
+
+    	if (array[mid] == x)
 			return (mid);
 		else if (array[mid] < x)
 			low = mid + 1;
 		else
 			high = mid - 1;
-		}
+	}
 
 	return (-1);
 }
